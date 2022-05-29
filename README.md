@@ -1,2 +1,2 @@
 # Projetos
- Projeto Android criado para fins de prática
+ Diretório criados para fins de prática e aperfeiçoamento das habilidades. 
