@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin: 0;
+    padding: 0; */
+    background-color: rgb(56, 56, 56);
+}
+
+.container{
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    max-width: 1000px;/*limita o tamanho do "header".*/
+    margin: auto;/*desgruda o "header", da borda esquerda*/
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;/*deixar o texto no centro*/
+    padding: 2px;/*aumenta o "corpo" do header*/
+}
+
+.title{
+    font-size: 26px;/*aumenta a fonte do "h1"*/
+}
+
+section{
+    padding: 15px;/*distancia o conteudo das bordas*/ 
+    background-image: url(assets/images/people.jpg);
+    background-size: cover;/*deixar imagem com tamanho total*/
+    overflow: hidden;/*deixa a imagem cobrir as divs e não ser cortada*/ 
+}
+
+.center{
+    max-width: 230px;/* milita o tamanho do "Center"*/
+    background-color: rgba(255, 255, 255, 0.2);
+    padding:20px;/*deixar seu corpo maior*/
+    float: right;   
+    margin: 20px;
+}
+
+h2{
+    font-size: 1em;
+}
+
+.mb{
+    margin-bottom: 15px; /*espaço entre os conteudos*/
+}
+
+input, select{
+    width: 100%; /*mesmo tamanho para os itens*/
+    box-sizing: border-box;/*deixa todos com borda box*/
+    padding: 10px;/*deixa com corpo maior*/
+    border: none;/*tira as bordas dos itens*/
+    margin-bottom: 10px ;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: black;
+    font-weight: bold;/*Muda o estilo da fonte*/
+}
+
+
+select{
+    -moz-appearance: none;/*retira o estilo para determinado navegador*/
+    -webkit-appearance: none;/*retira o estilo para determinado navegador*/
+    appearance: none;/*retira o estilo para determinado navegador*/
+
+    background-image: url(assets/images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+footer{
+    background-color: rgb(51, 51, 51);
+    padding: 40px;
+    text-align: center;
+}
+
+.picture{
+    width: 160px;
+}
+.description{
+    display: inline-block ;
+    text-align: left;
+    max-width: 40%;
+    margin-left: 40px;
+} 
+.description p, .description h3{
+    /* margin-bottom: 20px; */
+}
+
+@media screen and (max-width:650px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .center{
+        max-width: 100%;
+    }
+    header{
+        padding: 20px;
+    }  
+}
