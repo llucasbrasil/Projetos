@@ -69,7 +69,9 @@
 .restart{
     margin: 0 auto;
     text-align: center;
-    background-color: rgb(0, 142, 150);
+    border-bottom: 2px solid;
+    border-color:rgb(0, 142, 150);
+    background-color: red;
     border-radius: 0 0 80px 80px;
     width: 160px;
     height: 30px;
@@ -81,8 +83,25 @@
     letter-spacing: 0.2em;
 }
 
-main > p {
-    margin: 100px;
-    text-align: center;
 
+
+.textbottom{
+    background-color: rgb(0, 142, 150);
+    margin: 20px 50px;
+    border-radius: 20px;
+}
+.textbottom > p {
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 30px;
+
+}
+.textbottom > p > a {
+    text-decoration: none;
+    color: white;
+    font: 1.1em verdana;
+    background-color: rgb(255, 0, 0);
+    border-radius: 15px;
+    padding: 10px;
 }
