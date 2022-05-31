@@ -17,8 +17,8 @@
 .pipe{
     position: absolute; /* usado para nenhuma imagem interferir na outra*/
     bottom: 0;
-    width: 70px;
-    animation: pipe-animation 2s infinite linear;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
 }
 
 .mario{
