@@ -12,6 +12,7 @@
     margin: 0 auto;
     position: relative;/* respeitar a delimitação dessa class*/
     overflow: hidden; /* para tudo que sair da tela nao aparecer mais*/
+    background:linear-gradient(#87ceeb, #e0f6ff);
 }
 
 .pipe{
