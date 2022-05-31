@@ -81,3 +81,8 @@
     letter-spacing: 0.2em;
 }
 
+main > p {
+    margin: 100px;
+    text-align: center;
+
+}
