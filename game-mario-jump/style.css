@@ -7,7 +7,8 @@
 .game-board{
     width: 80%;
     height: 500px;
-    border: 2px solid  rgb(0, 142, 150);;
+    border: 2px solid  rgb(0, 142, 150);
+    border-radius: 0 0 10px 10px;
     margin: 0 auto;
     position: relative;/* respeitar a delimitação dessa class*/
     overflow: hidden; /* para tudo que sair da tela nao aparecer mais*/
@@ -69,7 +70,7 @@
     margin: 0 auto;
     text-align: center;
     background-color: rgb(0, 142, 150);
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 80px 80px;
     width: 160px;
     height: 30px;
 }
