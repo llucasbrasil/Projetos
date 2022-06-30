@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/af562a2a63.js' crossorigin='anonymous'></script>
+    <title>Contrato de Planos</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Rubik', sans-serif;
+        } 
+        a {
+            text-decoration: none;
+            color: #555;
+        }
+        li {
+            list-style-position: inside;/*deixar marcador da lista dentro de seu bloco*/
+            list-style: none;
+        }
+
+        .container-plano {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+        }
+        .container-plano>h1 {
+            letter-spacing: .05em;
+            margin: 15px 0;
+        }
+        .container-plano>p {
+            color: #555;
+            letter-spacing:.05em;/*aumentar o espaço entre as letras*/
+            /* text-indent: 10px; */
+            line-height: 1.3em;
+            padding: 0 20px;
+        }
+
+        .ul-principal {
+            display: flex;
+            justify-content: space-between;/*separar as listas umas das outras*/
+            width: 100%;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+        @media (max-width:750px) {
+            .ul-principal {
+                flex-wrap: wrap;/*fazer quebra automatica de listas para espaço abaixo*/
+            }
+        }
+
+        .li-principal{
+            border: 1px solid #f1f1f1;
+            max-width: 280px;
+            padding: 15px 20px;
+            width: 100%; /*istas ocuparem todo espaço e ficarem coladas uma na outra*/
+        }
+        @media (max-width:750px) {
+            .li-principal {
+                max-width: 100%;
+            }
+
+        }
+
+        .li-principal > div {
+            display: flex;/*deixar os itens um ao lado do outro*/
+            justify-content: center;/*centralizar os itens*/
+            align-items: center;/*centralizar mais ainda os itens*/
+            margin: 20px 0;
+        }
+
+        .strong-principal {
+            text-transform: uppercase;/*deixar texto em maiusculo*/
+            display: block;
+            text-align: center;
+            /* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.900); */
+        }
+        #strong-principal {
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.600);;
+        }
+        .strong-preco-normal {
+            font-size: 1.8em;
+            margin: 0 5px; /*adicionando um espaço nas informaçoes da div*/
+        }
+        #strong-preco-destaque {
+            font-size: 2.5em;
+            margin: 0 5px; /*adicionando um espaço nas informaçoes da div*/
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.200);
+        }
+
+        .fa-ul {
+            height: 150px;
+        }
+        .fa-ul li {
+            padding: 8px 0;
+        }
+        i {
+            color: rgba(189, 64, 124, 0.832);
+        }
+
+        #li-destaque {
+            background-color: #4db893;
+            border: 0;
+            box-shadow: inset 0px 20px 44px rgba(0, 0, 0, 0.300);
+            color: #fff;
+            position: relative;
+            transform: scale(1.1);
+        }
+        @media (max-width:750px) {
+            #li-destaque {
+                transform: scale(1.05);
+                margin: 10px 0;
+                box-shadow: inset 0px 20px 44px 10px rgba(0, 0, 0, 0.200), 0 0 3px rgba(0, 0, 0, 0.300);
+            }
+        }
+
+        #li-destaque .botao {
+            border-color: #fff;
+            color: #fff;
+        }
+        #li-destaque .botao:hover {
+            background-color: #fff;
+            color: #4db893;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+        }
+
+        .botao {
+            border: 1px solid #4db893;
+            color: #4db893;
+            display: block;/*ocupar o bloco todo da div (preencher o espaço vazio)*/
+            margin-top: 20px;/*aumentar espaço referente ao lorem ipsum*/
+            padding: 15px 0; 
+            text-align: center;
+            transition: 100ms linear;/*efeito de transição de parametros, com linear para tempo igual*/
+            width: 100%;/*configurado para sempre ocupar todo espaço da tela */
+        }
+        .botao:hover {
+            background-color: #4db893;
+            color: #fff;
+            box-shadow: inset 0px 0px 10px 0 rgba(0, 0, 0, 0.300) ;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <article class="container-plano">
+            <h1>Plano</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur voluptates amet doloremque ipsum sapiente aut non ducimus quisquam. Libero esse et perspiciatis sed adipisci suscipit quisquam maxime rem corrupti dolor!</p>
+        </article>
+
+        <ul class="ul-principal">
+            <li class="li-principal">
+                <strong class="strong-principal">Básico</strong>
+                <div>
+                    <sub>R$</sub>
+                    <strong class="strong-preco-normal">25</strong>
+                    <sup>/mês</sup>
+                </div>
+                <ul class="fa-ul">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-poo"></i></span>
+                        Lorem ipsum dolor
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-poo"></i></span>
+                        Lorem ipsum dolor
+                    </li>
+                    <!-- <li>
+                        <span class="fa-li"><i class="fas fa-poo"></i></span>
+                        Lorem ipsum dolor
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-poo"></i></span>
+                        Lorem ipsum dolor
+                    </li> -->
+                </ul>
+                <a href="#" class="botao">Inicie seu plano</a>
+            </li>
+
+
+            <li class="li-principal" id="li-destaque">
+                <strong class="strong-principal" id="strong-principal">Avançado</strong>
+                <div>
+                    <sub>R$</sub>
+                    <strong id="strong-preco-destaque">50</strong>
+                    <sup>/mês</sup>
+                </div>
+                <ul class="fa-ul">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-poo"></i></span>
+                        Lorem ipsum dolor
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-poo"></i></span>
+                        Lorem ipsum dolor
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-poo"></i></span>
+                        Lorem ipsum dolor
+                    </li>
+                    <!-- <li>
+                        <span class="fa-li"><i class="fas fa-poo"></i></span>
+                        Lorem ipsum dolor
+                    </li> -->
+                </ul>
+                <a href="#" class="botao">Inicie seu plano</a>
+            </li>
+
+
+            <li  class="li-principal">
+                <strong class="strong-principal">Premium</strong>
+                <div>
+                    <sub>R$</sub>
+                    <strong class="strong-preco-normal">100</strong>
+                    <sup>/mês</sup>
+                </div>
+                <ul class="fa-ul">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-poo"></i></span>
+                        Lorem ipsum dolor
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-poo"></i></span>
+                        Lorem ipsum dolor
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-poo"></i></span>
+                        Lorem ipsum dolor
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-poo"></i></span>
+                        Lorem ipsum dolor
+                    </li>
+                </ul>
+                <a href="#" class="botao">Inicie seu plano</a>
+            </li>
+        </ul>
+    </main>
+    
+</body>
+</html>
