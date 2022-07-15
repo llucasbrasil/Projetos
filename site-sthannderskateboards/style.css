@@ -20,7 +20,7 @@
 
 body {
     background-color: var(--cor0);
-    background-image: url(../assets/backg.jpg);
+    background-image: url(assets/backg.jpg);
 }
 
 h1,h2,h3 {
@@ -117,7 +117,7 @@ header {
     border-bottom: 2px solid var(--cor3);
     z-index: 10;
     background-color: #2626257f;
-    background-image: url(../assets/backg.jpg);
+    background-image: url(assets/backg.jpg);
     background-position: center;
     max-width: 800px;
 }
