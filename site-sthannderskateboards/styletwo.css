@@ -80,7 +80,7 @@ div.contenttwo img {
     border-radius: 50%;
     opacity: .5;
 }
-div.boxtwo:hover .contentone img {
+div.boxtwo:hover div.contenttwo img {
     opacity: 1;
 }
 
