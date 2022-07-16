@@ -55,11 +55,11 @@ p {
     } */
     
     h1,h2,h3 {
-        font: 1.4em/1.2em var(--fonte-padrão);
+        font: 1.2em/1.2em var(--fonte-padrão);
     }
     
     p {
-        font: 1.1em/1.4em var(--fonte-padrão);
+        font: 1em/1.4em var(--fonte-padrão);
     }
 
 }
@@ -116,9 +116,9 @@ header {
     margin: 0 auto;
     border-bottom: 2px solid var(--cor3);
     z-index: 10;
-    background-color: #2626257f;
+    background-color: #262625b6;
     background-image: url(assets/backg.jpg);
-    background-position: center;
+    background-position: left;
     max-width: 800px;
 }
 nav a {
@@ -235,13 +235,12 @@ li {
 }
 @media (max-width:550px) {
     li {
-        font: 1.1em/1.4em var(--fonte-padrão);
+        font: 1em/1.4em var(--fonte-padrão);
     }
 }
 #listmodels {
     margin: 10px;
 }
-
 #linkwhatsshapes {
     color: #fff;
     text-decoration: underline;
@@ -249,7 +248,6 @@ li {
 #linkwhatsshapes:hover {
     color: rgb(109, 207, 109);
 }
-
 
 #bodycontato {
     min-height: 400px;
@@ -283,7 +281,6 @@ form label input, form label textarea {
     border-radius: 5px;
     transition: border-color, box-shadow .2s;
 }
-
 form label textarea {
     min-height: 20rem;
     resize: none;
@@ -306,7 +303,6 @@ form button {
     cursor: pointer;
     transition: 0.4s;
     min-height: 50px;
-
 }
 form button:hover, form button:focus {
     background-color: #242424;
@@ -338,7 +334,6 @@ label {
     border-right: .5px solid var(--cor1);
     border-bottom: .5px solid var(--cor3);
     border-left: .5px solid var(--cor3);
-
 }
 #mapa iframe {
     display: block;
@@ -394,9 +389,6 @@ ul#listsocial li a:hover {
 }
 
 
-
-
-
 /* ===================>>footer<<=================== */
 
 #backgroundbottom {
@@ -411,6 +403,7 @@ ul#listsocial li a:hover {
 }
 #backgroundbottom a {
     color: #FFF;
+    font-family: var(--fonte-padrão);
     display: flex;
     justify-content: center;
     padding: 2px;
