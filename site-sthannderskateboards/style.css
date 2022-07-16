@@ -16,7 +16,7 @@
     --fonte-destaque: 'Bebas Neue', 'sans-serif';
 }
 
-/* ===================>><<=================== */
+/* ===================>>geral<<=================== */
 
 body {
     background-color: var(--cor0);
@@ -31,9 +31,7 @@ h1,h2,h3 {
     padding: 10px;
 }
 
-.h2top {
-    padding-top: 30px;
-}
+
 
 p {
     color: var(--cor5);
@@ -94,7 +92,10 @@ header {
         height: 10px;
     }
     header {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
+    }
+    img#logo {
+        top:15px
     }
 }
 
@@ -136,14 +137,14 @@ nav a:hover {
     }
 }
 
-#abaselect {
+a#abaselect {
     background-color: var(--cor0);
     border: .5px solid var(--cor3);
     color: var(--cor5);
     border-radius: 50px;
 }
 
-/* ===================>>body<<=================== */
+/* ===================>>body index<<=================== */
 
 main {
     background-color: var(--cor2);
@@ -151,20 +152,17 @@ main {
     padding-bottom: 10px;
     max-width: 800px;
     box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.800);
-    /* border-top: 2px solid var(--cor3); */
     border-bottom: 2px solid var(--cor3);
-    /* border-left: .1px solid var(--cor3);
-    border-right: .1px solid var(--cor3); */
 }
 
-#imgsindex img {
+aside#imgsindex img {
     width: 100%;
     box-shadow: 0 5px 3px #41282050;
 }
-aside #imgindextwo {
+aside#imgsindex #imgindextwo {
     padding: 0 2px;
 }
-aside #imgindexone {
+aside#imgsindex #imgindexone {
     position:absolute ;
     padding: 0 2px;
     max-width: 800px;
@@ -194,7 +192,7 @@ aside #imgindexone {
     }
 }
 
-.history {
+article.history {
     background-color: #472c24;
     padding: 100px; 
     margin: 20px;
@@ -205,16 +203,22 @@ aside #imgindexone {
     border-bottom: .5px solid var(--cor3);
     border-left: .5px solid var(--cor3);
 }
-.history  h1 {
+article.history  h1 {
     margin-bottom: 20px;
 }
 @media (max-width:550px) {
-    .history {
+    article.history {
         padding: 60px 20px;
     }
-    .history > p {
+    article.history > p {
         text-align: justify;
     }
+}
+
+/* ===================>>body shapes<<=================== */
+
+h2.h2topshapes {
+    padding-top: 30px;
 }
 
 li {
@@ -229,18 +233,18 @@ li {
         font: .9em/1.4em var(--fonte-padrão);
     }
 }
-#listmodels {
+ul#listmodels {
     margin: 10px;
 }
-#linkwhatsshapes {
+a#linkwhatsshapes {
     color: #fff;
     text-decoration: underline;
 }
-#linkwhatsshapes:hover {
+a#linkwhatsshapes:hover {
     color: rgb(109, 207, 109);
 }
 
-#bodycontato {
+article#bodycontato {
     min-height: 400px;
     display: flex;
     align-items: center;
@@ -249,11 +253,11 @@ li {
     padding: 0 7rem;
 }
 @media (max-width:600px) {
-    #bodycontato {
+    article#bodycontato {
         padding: 0 1rem;
     }
 }
-#bodycontato h3 {
+article#bodycontato h3 {
     margin: 30px;
 }
 form {
@@ -318,7 +322,7 @@ label {
     }
 }
 
-#mapa {
+aside#mapa {
     margin-top: 40px;
     width: 100%;
     background-color: var(--cor0);
@@ -331,16 +335,16 @@ label {
     border-bottom: .5px solid var(--cor3);
     border-left: .5px solid var(--cor3);
 }
-#mapa iframe {
+aside#mapa iframe {
     display: block;
     margin: 10px auto 20px;
     box-shadow: -2px 2px 4px #1a1a19;
 }
 
-#contatoendereco p {
+aside#contatoendereco p {
     padding: 15px;
 }
-#linkfone {
+a#linkfone {
     font-size: .9em;
     color: var(--cor5); 
 }
@@ -387,7 +391,7 @@ ul#listsocial li a:hover {
 
 /* ===================>>footer<<=================== */
 
-#backgroundbottom {
+div#backgroundbottom {
     width: 100%;
     height: 25px;
     background-color: var(--cor2);
@@ -397,10 +401,41 @@ ul#listsocial li a:hover {
     box-shadow: inset 0 10px 10px #412820;
     z-index: 10;
 }
-#backgroundbottom a {
+div#backgroundbottom a {
     color: #FFF;
     font-family: var(--fonte-padrão);
     display: flex;
     justify-content: center;
     padding: 2px;
+}
+@media (max-width:550px) {
+    div#backgroundbottom {
+        height: 15px;
+    }
+    div#backgroundbottom a {
+        font-size: .5em;
+    }
+}
+
+div#whatsapp {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(109, 207, 109);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: -2px 3px 10px #00000088;
+    z-index: 10;
+}
+div#whatsapp a i {
+    margin-top: 10px;
+    transition: 0.5s;
+    color: var(--cor5)
+}
+div#whatsapp a i:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
 }
