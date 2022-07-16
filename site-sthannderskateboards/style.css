@@ -221,6 +221,16 @@ h2.h2topshapes {
     padding-top: 30px;
 }
 
+ul#listmodels {
+    margin: 10px;
+}
+a#linkwhatsshapes {
+    color: #fff;
+    text-decoration: underline;
+}
+a#linkwhatsshapes:hover {
+    color: rgb(109, 207, 109);
+}
 li {
     color: var(--cor5);
     font: 1.3em/1.4em var(--fonte-padrão);
@@ -233,16 +243,8 @@ li {
         font: .9em/1.4em var(--fonte-padrão);
     }
 }
-ul#listmodels {
-    margin: 10px;
-}
-a#linkwhatsshapes {
-    color: #fff;
-    text-decoration: underline;
-}
-a#linkwhatsshapes:hover {
-    color: rgb(109, 207, 109);
-}
+
+/* ===================>>body contato<<=================== */
 
 article#bodycontato {
     min-height: 400px;
@@ -260,6 +262,7 @@ article#bodycontato {
 article#bodycontato h3 {
     margin: 30px;
 }
+
 form {
     width: 100%;
 }
@@ -373,7 +376,6 @@ ul#listsocial li a {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.4s;
-    /* min-height: 20px; */
 }
 ul#listsocial li a:hover {
     background-color: #242424;
