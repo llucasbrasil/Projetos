@@ -24,14 +24,7 @@ div.boxtwo {
      10px -10px 10px #87624e;
 }
 
-@media (max-width:500px) {
-    div.boxtwo {
-        width: 280px;
-        height: 280px;
-        min-width: 280px;
-        min-height: 280px;
-    }
-}
+
 
 div.boxtwo::before {
     content: '';
@@ -119,9 +112,11 @@ p.configtexttwo {
     }
     p.shapetextrighttwo {
         text-align: center;
+        max-width: 400px;
+        margin: 0 auto 60px;
     }
     div.boxtwo {
-        margin: 30px auto;
+        margin: 30px auto 20px;
     }
     p#paragraphnonerighttwo {
         display: none;
@@ -130,7 +125,21 @@ p.configtexttwo {
     p#paragraphnonelefttwo {
         display: block;
         text-align: center;
+        max-width: 400px;
+        margin: 0px auto 60px;
     }
+}
+@media (max-width:500px) {
+    div.boxtwo {
+        width: 280px;
+        height: 280px;
+        min-width: 280px;
+        min-height: 280px;
+        margin: 30px auto 7px;
+    }
+    /* p#paragraphnonelefttwo {
+        margin: 0px auto 60px;
+    } */
 }
 
 /* ===================>><<=================== */
@@ -234,7 +243,7 @@ div#shapestwo :hover {
     .gallerytwo {
         display: flex;
         flex-direction: column;
-        height: 400px;
+        max-height: 300px;
         border-left: none;
         border-right: none;
     }

@@ -31,8 +31,6 @@ h1,h2,h3 {
     padding: 10px;
 }
 
-
-
 p {
     color: var(--cor5);
     font: 1.3em/1.4em var(--fonte-padrão);
@@ -43,11 +41,11 @@ p {
 
 @media (max-width:550px) {
     h1,h2,h3 {
-        font: 1.2em/1.2em var(--fonte-padrão);
+        font: 1.3em/1.2em var(--fonte-padrão);
     }
 
     p {
-        font: .9em/1.4em var(--fonte-padrão);
+        font: 1em/1.4em var(--fonte-padrão);
     }
 }
 
@@ -111,7 +109,7 @@ header {
 }
 @media (max-width:550px) {
     div#backgroundtop {
-        height: 10px;
+        height: 17px;
     }
     header {
         margin-bottom: 15px;
@@ -434,10 +432,11 @@ div#backgroundbottom a {
 }
 @media (max-width:550px) {
     div#backgroundbottom {
-        height: 15px;
+        height: 17px;
     }
     div#backgroundbottom a {
-        font-size: .5em;
+        font-size: .7em;
+        padding: 0;
     }
 }
 
