@@ -137,9 +137,6 @@ p.configtexttwo {
         min-height: 280px;
         margin: 30px auto 7px;
     }
-    /* p#paragraphnonelefttwo {
-        margin: 0px auto 60px;
-    } */
 }
 
 /* ===================>><<=================== */
@@ -193,14 +190,12 @@ div#shapestwo :hover {
     }
     div#shapestwo :hover {
         transform: scale(1.1);
-        /* transition: 1s; */
-        /* transform: rotate(-90deg), scale(1.3); */
     }
 }
 
 .gallerytwo {
     width: 100%;
-    max-width: 760px;
+    max-width: 660px;
     height: 250px;
     margin: auto;
     display: flex;
@@ -214,19 +209,14 @@ div#shapestwo :hover {
     border-right: .5px solid var(--cor1);
     border-bottom: .5px solid var(--cor3);
     border-left: .5px solid var(--cor3);
-    /* z-index: 100; */
 }
 
 .gallerytwo img {
     height: 100%;
-    /* width: 100%; */
     flex: 1;
     object-fit: cover;
     overflow: hidden;
     cursor: pointer;
-    /* border-right: .5px solid #1a1a19; */
-    /* border-left: .5px solid #1a1a19; */
-    /* border-radius: 10px; */
     transition: all 1s;
 }
 
@@ -234,9 +224,13 @@ div#shapestwo :hover {
     flex: 4;
 }
 
-.gallerytwoback {
+.gallerytwobackleft {
     box-shadow: 
     -5px 0px .5px #1a1a1950,
+    5px 0px .5px #1a1a1950;
+}
+.gallerytwobackright {
+    box-shadow: 
     5px 0px .5px #1a1a1950;
 }
 @media (max-width:550px) {
@@ -247,13 +241,13 @@ div#shapestwo :hover {
         border-left: none;
         border-right: none;
     }
-    .gallerytwo img {
-        /* border-right:none;
-        border-left: none; */
-    }
-    .gallerytwoback {
+    .gallerytwobackleft {
          box-shadow:
         0px 5px .5px #1a1a1950,
         0px -5px .5px #1a1a1950;
+    }
+    .gallerytwobackright {
+        box-shadow: 
+        0px 5px .5px #1a1a1950;
     }
 }

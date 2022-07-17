@@ -56,7 +56,7 @@ hr {
     border-left: none;
     margin: 30px;
 }
-@media (max-width:800px) {
+@media (max-width:700px) {
     hr {
         margin: 30px 0;
         transition: .5s;
@@ -131,7 +131,7 @@ header {
     background-color: #262625b6;
     background-image: url(assets/backg.jpg);
     background-position: left;
-    max-width: 800px;
+    max-width: 700px;
 }
 nav a {
     color: var(--cor4);
@@ -170,7 +170,7 @@ main {
     background-color: var(--cor2);
     margin: 0 auto 60px;
     padding-bottom: 10px;
-    max-width: 800px;
+    max-width: 700px;
     box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.800);
     border-bottom: 2px solid var(--cor3);
 }
@@ -185,7 +185,7 @@ aside#imgsindex #imgindextwo {
 aside#imgsindex #imgindexone {
     position:absolute ;
     padding: 0 2px;
-    max-width: 800px;
+    max-width: 700px;
     opacity: 0;
     animation: imgindexone 6s infinite;
 }
