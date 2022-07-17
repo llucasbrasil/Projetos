@@ -23,9 +23,6 @@ div.boxtwo {
      -10px 10px 10px #412820,
      10px -10px 10px #87624e;
 }
-
-
-
 div.boxtwo::before {
     content: '';
     position: absolute;
@@ -63,8 +60,7 @@ div.contenttwo {
     border: 1px solid #BF9E8055;
     z-index: 3;
     border-radius: 50%;
-    transition: 1s;
-    
+    transition: 1s; 
 }
 div.contenttwo:hover {
     inset: 3px;
@@ -141,7 +137,6 @@ p.configtexttwo {
 
 /* ===================>><<=================== */
 
-
 .gallerytwo {
     width: 100%;
     max-width: 660px;
@@ -159,7 +154,6 @@ p.configtexttwo {
     border-bottom: .5px solid var(--cor3);
     border-left: .5px solid var(--cor3);
 }
-
 .gallerytwo img {
     height: 100%;
     flex: 1;
@@ -168,11 +162,9 @@ p.configtexttwo {
     cursor: pointer;
     transition: all 1s;
 }
-
 .gallerytwo img:hover {
     flex: 4;
 }
-
 .gallerytwobackleft {
     box-shadow: 
     -5px 0px .5px #1a1a1950,
