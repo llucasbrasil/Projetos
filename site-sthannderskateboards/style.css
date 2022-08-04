@@ -236,27 +236,37 @@ h2.h2topshapes {
     padding-top: 30px;
 }
 
+
 ul#listmodels {
     margin: 10px;
-}
-a#linkwhatsshapes {
-    color: #fff;
-    text-decoration: underline;
-}
-a#linkwhatsshapes:hover {
-    color: rgb(109, 207, 109);
+    list-style: none;
 }
 li {
     color: var(--cor5);
     font: 1.3em/1.4em var(--fonte-padrão);
     text-shadow: -2px 2px 2px #000;
     text-align: center;
-    list-style-position: inside;
+}
+ul#listmodels li::before {
+    content: "•";
+    color: var(--cor4);
+    display: inline-block;
+    width: 2em;
+    margin-left: -2em;
 }
 @media (max-width:550px) {
-    li {
-        font: .9em/1.4em var(--fonte-padrão);
+    #listmodels li {
+        font-size: .9em;
     }
+}
+
+
+a#linkwhatsshapes {
+    color: #fff;
+    text-decoration: underline;
+}
+a#linkwhatsshapes:hover {
+    color: rgb(109, 207, 109);
 }
 
 /* ===================>>body contato<<=================== */
@@ -376,14 +386,13 @@ ul#listsocial {
 }
 ul#listsocial li {
     margin: 15px auto;
-    width: 80%;
+    width: 100%;
 }
 ul#listsocial li a {
     display: block;
     padding: .8rem;
     background-color: var(--cor0);
     color: var(--cor5);
-    font-family: var(--fonte-padrão);
     font-size: 16px;
     text-shadow: none;
     letter-spacing: .1em;
